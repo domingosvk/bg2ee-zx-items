@@ -1,0 +1,242 @@
+// lang/english/zxitems.tra
+
+@1 = ~ZX custom ToB item pack~
+
+// -----------------------------------------------------------------------------
+// ZXAMUL1
+// -----------------------------------------------------------------------------
+
+@1001 = ~Amulet of the Tempered Will~
+
+@1002 = ~This amulet is dark metal set with a narrow line of pale fire. It bears no holy sign, no wizard's mark, and no claim of blood or crown.
+
+Its power came fully awake after the bearer's soul was restored and his will returned from Hell tested, wounded, and unbroken. It offers no comfort from memory. It offers discipline.
+
+While worn, spell and steel answer more readily to the same command. Death-magic, poison and the hunger of the unliving find less purchase, and when the amulet's deeper ward is called, the will hardens against final theft.
+
+STATISTICS:
+
+Equipped abilities:
+- THAC0: +2
+- Saving Throws: +1
+- Save vs. Death: +3
+- Magic Resistance: +10%
+- Decrease spellcasting time by 1
+- Can memorize one extra wizard spell of each level
+- Immunity to Level Drain
+- Immunity to Poison
+
+Special ability:
+- Once per day:
+  Death Ward
+  Duration: 5 turns
+  Area of Effect: The user
+  Usable instantly - without interrupting current action
+  Not dispellable
+
+Weight: 1~
+
+// -----------------------------------------------------------------------------
+// ZXAMUL2
+// -----------------------------------------------------------------------------
+
+@1011 = ~Amulet of the Returned Soul~
+
+@1012 = ~This small amulet is warm to the touch, though no fire marks it. Its chain is plain, its setting simple, and the pale stone at its heart shifts between rose, silver, and clear glass.
+
+Imoen kept it through Spellhold without knowing why. After Bodhi's death, when what had been stolen was restored, the amulet changed. Not with thunder or revelation, but with the quiet certainty of a door closing from the inside.
+
+Its magic is not vengeance. It is refusal. It steadies the hand, sharpens the body, preserves the voice, and guards the soul against those who would take it again.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+- Armor Class: +1
+- Saving Throws: +2
+- Decrease spellcasting time by 1
+- Can memorize one extra wizard spell of each level
+- Vocalize
+
+Special ability:
+- Once per day:
+  Negative Plane Protection
+  Death Ward
+  Duration: 5 turns
+  Area of Effect: The user
+  Usable instantly - without interrupting current action
+  Not dispellable
+
+Usable by: Imoen
+
+Weight: 1~
+
+// -----------------------------------------------------------------------------
+// ZXCHAN1
+// -----------------------------------------------------------------------------
+
+@1021 = ~War Wizard's Mithral Chain~
+
+@1022 = ~This mithral chain is light, close-fitted, and worked with elven spell-lines over a dwarven foundation. It moves like cloth, but catches blades like mail.
+
+It is said to come from the old cooperation of Myth Drannor, made for war wizards and bladesingers who could not afford to choose between spell, steel, and motion. The weave guides magic through the armor instead of choking it, while the links guard the body without fixing it in place.
+
+The chain is no robe, and no ordinary mail. It favors movement, sharp counters, and battlefield control, though crushing force remains its weakness.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -5%
+- Find Traps: -5%
+- Pick Pockets: -20%
+- Move Silently: -10%
+- Spellcasting is not disabled
+- Decrease spellcasting time by 2
+- THAC0: +1
+- Saving Throws: +1
+- Magic Resistance: +10%
+- Immunity to Web, Entangle, Grease, and Slow
+
+
+Armor Class: 0 (-2 vs. slashing, 2 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 7~
+
+// -----------------------------------------------------------------------------
+// ZXHELM1
+// -----------------------------------------------------------------------------
+
+@1031 = ~Helm of the Watchful Mind~
+
+@1032 = ~This helm is close-fitted and cleanly made, shaped without horns, wings, or battlefield vanity. Its silver-blue metal bears fine warding marks along the brow and temples, almost invisible except in angled light.
+
+It was made for clear sight, quick judgment, and the refusal to let hostile magic find an easy opening. It lacks the weight and theater of grand war-helms, but its enchantments sharpen awareness, guard the mind, and turn aside the kind of blow that would end command in an instant.
+
+For those tired of crests, horns, and theatrical ironwork, it offers a simpler promise: keep the head clear, and keep it attached.
+
+STATISTICS:
+
+Equipped abilities:
+- Protects against critical hits
+- Armor Class: +1
+- THAC0: +2
+- Saving Throws: +1
+- Magic Resistance: +10%
+- Infravision
+- Vocalize
+- Immunity to Blindness
+- Immunity to Deafness
+
+Weight: 2~
+
+// -----------------------------------------------------------------------------
+// ZXPLAT1
+// -----------------------------------------------------------------------------
+
+@1041 = ~Battle-Priest's Full Plate +3~
+
+@1042 = ~This full plate is lighter than its shape suggests, its plates worked thin and strong by temple-forge craft. The armor is severe rather than ornate, built for battlefields where prayer must be spoken through steel, blood, and panic.
+
+It was made for priests who stand close enough to matter. Its enchantments do not grant more miracles, nor do they make the wearer untouchable. Instead, they steady the body, quicken the prayer, and help divine magic enter the fight before the moment is lost.
+
+When the line begins to fail, the armor may be called to answer at once. For a few heartbeats, it lightens around the wearer, prayer comes with urgent clarity, and a brief skin of sacred iron absorbs the first blows meant to stop it.
+
+STATISTICS:
+
+Equipped abilities:
+- Decrease spellcasting time by 1
+- Saving Throws: +2
+
+Special ability:
+- Once per day:
+  Improved Alacrity
+  Decrease spellcasting time by additional 3 (total 4)
+  Movement speed: +3
+  Iron Skins (3 skins)
+  Duration: 2 rounds
+  Area of Effect: The user
+  Usable instantly - without interrupting current action
+  Not dispellable (all effects but Iron Skins)
+
+Armor Class: -2 (-6 vs slashing, -5 vs piercing and missile)
+Requires:
+ 12 Strength
+
+Weight: 35~
+
+// -----------------------------------------------------------------------------
+// ZXSW1H1
+// -----------------------------------------------------------------------------
+
+@1051 = ~Blade of Finality +4~
+
+@1052 = ~This katana is spare, severe, and almost plain. Its edge catches the light strangely, not gleaming so much as dividing what lies before it.
+
+The blade carries no rage, hunger, or pride. It carries resolution. It waits for the moment when hesitation ends and purpose narrows to a single line.
+
+In battle, its lesser cuts break rhythm and leave enemies open. A perfect cut may end more than flesh, forcing the body to accept what the blade has already decided.
+
+Occasionally, the wielder may commit fully to the killing line. For a brief span, the blade strikes with impossible certainty, its edge finding openings that lesser weapons would miss.
+
+STATISTICS:
+
+Equipped abilities:
+- Chance to score a critical hit: +5%
+
+Combat abilities:
+- Hit target must save vs. Spell at -2 or be stunned for 1 round
+- On critical hit, target must Save vs. Death at -4 or be slain
+
+Special ability:
+- Twice per day:
+  This weapon is treated as having a +6 enchantment for the purposes of determining what it can hit
+  Chance to score a critical hit: additional +10% (total +15%)
+  THAC0: +10
+  Duration: 4 rounds
+  Area of Effect: The weapon
+  Not dispellable
+
+Combat abilities:
+THAC0: +4
+Damage: 1d10 +4, +1d4 magic damage
+Damage type: slashing
+Speed Factor: 1
+Proficiency Type: Katana
+Type: One-handed
+Requires: 6 Strength
+
+Weight: 6~
+
+// -----------------------------------------------------------------------------
+// ZXSW1H2
+// -----------------------------------------------------------------------------
+
+@1061 = ~Faithful Companion +3~
+
+@1062 = ~This wakizashi is modest beside grander blades, but its balance is exceptional. Its hilt is worn smooth, as though often drawn, often trusted, and rarely displayed.
+
+It is the second blade: the steady blade, the one that guards the hand while another weapon claims the killing stroke. It does not seek glory. It keeps rhythm, turns aside steel, and makes the main hand faster by never asking to lead.
+
+It is not a shield. It is not a relic of invulnerability. It is simply the blade that stays.
+
+STATISTICS:
+
+Equipped abilities:
+- 1 extra attack per round
+- THAC0: +2 with off hand
+- Armor Class: +1
+- Armor Class: +1 vs. slashing attacks
+- Saving Throws: +1
+
+Combat abilities:
+THAC0: +3
+Damage: 1d8 +3
+Damage type: slashing
+Speed Factor: 1
+Proficiency Type: Wakizashi
+Type: One-handed
+Requires: 5 Strength
+
+Weight: 3~

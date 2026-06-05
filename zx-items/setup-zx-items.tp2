@@ -1,0 +1,76 @@
+// setup-zx-items.tp2
+
+BACKUP ~zx-items/backup~
+AUTHOR ~ZX private/custom ToB item pack~
+VERSION ~0.1~
+
+LANGUAGE ~English~
+         ~english~
+         ~zx-items/lang/english.tra~
+
+BEGIN @1
+
+REQUIRE_PREDICATE GAME_IS ~bg2ee~
+  ~ZX Items currently support BG2EE only.~
+
+// -----------------------------------------------------------------------------
+// Copy prepared item files and assign identified names/descriptions.
+// Assumption: ITM files are already mechanically prepared.
+// This installer only sets identified name/description and appends 2DA rows.
+// -----------------------------------------------------------------------------
+
+COPY ~zx-items/items/ZXAMUL1.ITM~ ~override/ZXAMUL1.ITM~
+  SAY NAME2 @1001
+  SAY DESC  @1002
+
+COPY ~zx-items/items/ZXAMUL2.ITM~ ~override/ZXAMUL2.ITM~
+  SAY NAME2 @1011
+  SAY DESC  @1012
+
+COPY ~zx-items/items/ZXCHAN1.ITM~ ~override/ZXCHAN1.ITM~
+  SAY NAME2 @1021
+  SAY DESC  @1022
+
+COPY ~zx-items/items/ZXHELM1.ITM~ ~override/ZXHELM1.ITM~
+  SAY NAME2 @1031
+  SAY DESC  @1032
+
+COPY ~zx-items/items/ZXPLAT1.ITM~ ~override/ZXPLAT1.ITM~
+  SAY NAME2 @1041
+  SAY DESC  @1042
+
+COPY ~zx-items/items/ZXSW1H1.ITM~ ~override/ZXSW1H1.ITM~
+  SAY NAME2 @1051
+  SAY DESC  @1052
+
+COPY ~zx-items/items/ZXSW1H2.ITM~ ~override/ZXSW1H2.ITM~
+  SAY NAME2 @1061
+  SAY DESC  @1062
+
+// Critical-hit spell effect used by Blade of Finality.
+// Prepared externally; copied without alteration.
+COPY ~zx-items/spells/ZXSW1H1.SPL~ ~override/ZXSW1H1.SPL~
+
+// -----------------------------------------------------------------------------
+// Magical armor exclusion.
+// ZXCHAN1 and ZXPLAT1 should not stack with protection jewelry.
+// Row format: RESREF  1
+// -----------------------------------------------------------------------------
+
+APPEND ~ITEMEXCL.2DA~ ~ZXCHAN1 1~
+  UNLESS ~^ZXCHAN1[ %TAB%]~
+
+APPEND ~ITEMEXCL.2DA~ ~ZXPLAT1 1~
+  UNLESS ~^ZXPLAT1[ %TAB%]~
+
+// -----------------------------------------------------------------------------
+// Imoen-only equip restriction.
+// Uses post-Spellhold Imoen script/death variable: IMOEN2.
+// 9382 = "Cannot use item"
+// 2 = block other actors from equipping
+// 16453 = Imoen name string
+// Opcode 319 should still be present on the ITM itself for "Usable by: Imoen".
+// -----------------------------------------------------------------------------
+
+APPEND ~ITEM_USE.2DA~ ~ZXAMUL2 IMOEN2 9382 2 16453~
+  UNLESS ~^ZXAMUL2[ %TAB%]~
